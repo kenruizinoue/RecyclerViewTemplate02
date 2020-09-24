@@ -4,11 +4,11 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
+const val VIEW_TYPE_ONE = 1
+const val VIEW_TYPE_TWO = 2
+
 class CustomAdapter(private var list: List<String>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
-
-    private val VIEW_TYPE_ONE = 1
-    private val VIEW_TYPE_TWO = 2
 
     // return the type RecyclerView.ViewHolder so it can be ViewHolder1 or ViewHolder2
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
